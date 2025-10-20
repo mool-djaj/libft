@@ -5,7 +5,7 @@ void *ft_memmove(void *dst, const void *src ,size_t n)
     size_t i;
     unsigned char *d = (unsigned char *)dst;
     unsigned char *s = (unsigned char *)src;
-    
+    i = n;
 
     if (!dst || !src)
     {
@@ -14,7 +14,6 @@ void *ft_memmove(void *dst, const void *src ,size_t n)
     
     if (d > s)
     {
-		i = n;
         while (i > 0)
         {
             i--;
@@ -24,7 +23,6 @@ void *ft_memmove(void *dst, const void *src ,size_t n)
     }
     else
     {
-		i=0;
         while (i < n)
         {
             d[i] = s[i];
@@ -38,17 +36,3 @@ void *ft_memmove(void *dst, const void *src ,size_t n)
 return (dst);
 
 }
-
-//  #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     char s1[12] = "123456789";
-//     char s2[12];
-//     //printf("Before: %s\n", s1);
-//     //ft_memmove(s1 + 2, s1, 5); 
-//     //printf("After:  %s\n", s1);
-// 	ft_memmove(s2, s1, 5);
-// 	printf("After2:  %s\n", s1);
-// }

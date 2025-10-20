@@ -1,21 +1,5 @@
 #include "libft.h"
 
-size_t ft_strlen(const char *r)
-{
-	size_t i = 0;
-    if (*r == '\0')
-    return 0;
- 
-    else
-    while (r[i])
-	{
-		i++;
-	}
-
-
-	return (i);
-}
-
 size_t ft_strlcpy(char *dst,const char *src,size_t ds_size)
 {
     size_t i;

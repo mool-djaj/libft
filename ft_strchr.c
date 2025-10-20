@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "libft.h"
 
 char *ft_strchr(const char *str, int c)
 {
@@ -17,11 +17,11 @@ char *ft_strchr(const char *str, int c)
     return NULL;
 }
 
-int main() {
-    char myStr[] = "Hello World";
-    char *myPtr = ft_strchr(myStr, 'l');
-    if (myPtr != NULL) {
-        printf("%s\n", myPtr);
-    }
-    return 0;
-}
+// int main() {
+//     char myStr[] = "Hello World";
+//     char *myPtr = ft_strchr(myStr, 'l');
+//     if (myPtr != NULL) {
+//         printf("%s\n", myPtr);
+//     }
+//     return 0;
+// }
