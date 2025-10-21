@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/21 10:42:15 by akaarich          #+#    #+#             */
+/*   Updated: 2025/10/21 16:56:11 by akaarich         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef AYOUB_H     // If AYOUB_H is not defined
 # define AYOUB_H    // Define it, so next includes are skipped
 
@@ -5,8 +17,11 @@
 # include <stdlib.h>  // malloc
 
 
-
-
+typedef struct s_list
+{
+    void            *content;
+    struct s_list   *next;
+}   t_list;
 
 
 int ft_isascii(int c);
@@ -29,6 +44,14 @@ void *ft_memchr(const void *s, int c, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
 void *ft_calloc(size_t nmemb, size_t size);
 char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
+char *ft_itoa(int n);
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
+void ft_putendl_fd(char *s, int fd);
+
 
 char *ft_strrchr(const char *s, int c);
 char *ft_strchr(const char *s, int c);
@@ -39,6 +62,8 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int tolower(int c);
 int toupper(int c);
 int ft_atoi(const char *str);
+
+
 
 
 
