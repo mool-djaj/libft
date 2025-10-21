@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:55:15 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 17:51:43 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:28:27 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 t_list *ft_lstnew(void *content)
 {
-	typedef struct s_list
-	{
-    	void            *content;
-    	struct s_list   *next;
-	}  t_list;
 
-	t_list *node = malloc(sizeof(t_list));
+	t_list *node;
+	
+	node = malloc(sizeof(t_list));
+	
+	if (!node)
+	return (NULL);
 	
 	node->content=content;
 	node->next=NULL;
@@ -28,3 +28,31 @@ t_list *ft_lstnew(void *content)
 	return (node);
 
 }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main(void)
+// {
+//     t_list *node;
+
+//     // Create a new node with content "Hello"
+//     node = ft_lstnew("Hello, Libft!");
+
+//     // Print node info
+//     if (node)
+//     {
+//         printf("Content: %s\n", (char *)node->content);  // prints "Hello, Libft!"
+//         printf("Next pointer: %p\n", (void *)node->next); // prints NULL
+//     }
+//     else
+//     {
+//         printf("Node creation failed!\n");
+//     }
+
+//     // Free the node when done
+//     free(node);
+
+//     return 0;
+// }
