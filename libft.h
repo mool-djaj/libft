@@ -28,10 +28,10 @@ void *ft_memset(void *ptr, int vale, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
 void *ft_calloc(size_t nmemb, size_t size);
+char *ft_strtrim(char const *s1, char const *set);
 
-
-char *strrchr(const char *s, int c);
-char *strchr(const char *s, int c);
+char *ft_strrchr(const char *s, int c);
+char *ft_strchr(const char *s, int c);
 size_t ft_strlcat(char *dst, const char *src,size_t ds_size);
 size_t ft_strlcpy(char *dst,const char *src,size_t ds_size);
 int ft_strncmp(const char *s1, const char *s2 ,size_t n);
