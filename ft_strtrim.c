@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:41:29 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 10:41:30 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/22 18:55:30 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char *ft_strtrim(char const *s1, char const *set)
     len = ft_strlen(s1);
 
     if (!s1 || !set)
-    {
+    {					
         return (NULL);
     }
 

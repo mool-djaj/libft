@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:42:15 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 19:47:01 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/22 18:40:45 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct s_list
 void	ft_lstadd_front(t_list **lst, t_list *new);
 t_list *ft_lstnew(void *content);
 int ft_lstsize(t_list *lst);
+t_list *ft_lstlast(t_list *lst);
 
 
 

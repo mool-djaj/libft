@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:43:55 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 12:19:27 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/22 18:50:46 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char **ft_split(char const *s, char c)
         start = i;
         while (s[i] && s[i] != c)
             i++;
-        d[j++] = ft_substr(s, start, i - start); // allocate word
+        d[j++] = ft_substr(s, start, i - start); 
     }
     d[j] = NULL;
 
