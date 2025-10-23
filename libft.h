@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:42:15 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/22 18:40:45 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/23 21:08:43 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 t_list *ft_lstnew(void *content);
 int ft_lstsize(t_list *lst);
 t_list *ft_lstlast(t_list *lst);
+void ft_lstclear(t_list **lst, void (*del)(void*));
+void ft_lstiter(t_list *lst, void (*f)(void *));
 
 
 

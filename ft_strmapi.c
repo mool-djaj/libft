@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 12:53:01 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 14:23:29 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/23 20:03:51 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while (s[i])
 	{
 		d[i] = f(i, s[i]);
-		i++;
+		i++; 
 	}
 	d[i] = '\0';
 	
