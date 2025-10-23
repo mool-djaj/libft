@@ -17,7 +17,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	if (!lst || !new)
 		return ;
 
-	new = ft_lstsize(*lst);
 	new->next = *lst;  // link new node to current head
 	*lst = new;        // update head to new node
 }
