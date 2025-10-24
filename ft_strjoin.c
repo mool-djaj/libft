@@ -27,7 +27,7 @@ char *ft_strjoin(char const *s1, char const *s2)
     i = 0;
     j = 0;
 
-    d = calloc(tootal + 1,sizeof (char));
+    d = ft_calloc(tootal + 1,sizeof (char));
 
     if (!d)
     {
@@ -51,7 +51,6 @@ char *ft_strjoin(char const *s1, char const *s2)
     
 }
 
-// #include <stdio.h>
 
 // int main()
 // {
