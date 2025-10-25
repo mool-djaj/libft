@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:41:25 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 10:41:26 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/25 13:06:01 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,6 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	if (s[i] == (char)c)
-		last = (char *)&s[i];
+		last = (char *) &s[i];
 	return (last);
 }
-
-// int main() {
-//     char myStr[] = "Hello World";
-//     char *myPtr = ft_strrchr(myStr, 'l');
-//     if (myPtr != NULL) {
-//         printf("%s\n", myPtr);
-//     }
-//     return 0;
-// }
