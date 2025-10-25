@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 18:03:00 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/22 19:39:24 by akaarich         ###   ########.fr       */
+/*   Created: 2025/10/25 15:05:13 by akaarich          #+#    #+#             */
+/*   Updated: 2025/10/25 15:05:15 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!lst || !new)
+	if (!lst)
 		return ;
-	new->next = *lst;
-	*lst = new;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
-// link new node to current head
-// update head to new node

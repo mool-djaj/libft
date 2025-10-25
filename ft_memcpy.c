@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:40:00 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 10:40:01 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/25 15:07:42 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
+	if (!d || !s)
+		return (NULL);
 	i = 0;
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
