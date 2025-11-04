@@ -58,10 +58,8 @@ static char	*word_fill(const char *s, char c)
 static char	**ft_s_mall(const char *s, char c)
 {
 	char	**d;
-	size_t	i;
 	size_t	words;
 
-	i = 0;
 	if (!s)
 		return (NULL);
 	words = ft_count_words(s, c);

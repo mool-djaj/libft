@@ -36,36 +36,36 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-#include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
 
-int main(void)
-{
-    char str1[20] = "abcdef";
-    char str2[20] = "abcdef";
+// int main(void)
+// {
+//     char str1[20] = "abcdef";
+//     char str2[20] = "abcdef";
 
-    printf("Before:\nstr1 = %s\nstr2 = %s\n", str1, str2);
+//     printf("Before:\nstr1 = %s\nstr2 = %s\n", str1, str2);
 
-    // Case 1: Overlapping forward copy
-    ft_memmove(str1 + 2, str1, 4);
-    memmove(str2 + 2, str2, 4);
+//     // Case 1: Overlapping forward copy
+//     ft_memmove(str1 + 2, str1, 4);
+//     memmove(str2 + 2, str2, 4);
 
-    printf("\nAfter memmove overlap (src < dest):\n");
-    printf("ft_memmove: %s\n", str1);
-    printf("memmove:    %s\n", str2);
+//     printf("\nAfter memmove overlap (src < dest):\n");
+//     printf("ft_memmove: %s\n", str1);
+//     printf("memmove:    %s\n", str2);
 
-    // Case 2: Normal non-overlapping
-    char src[] = "12345";
-    char dest1[10] = "xxxxx";
-    char dest2[10] = "xxxxx";
+//     // Case 2: Normal non-overlapping
+//     char src[] = "12345";
+//     char dest1[10] = "xxxxx";
+//     char dest2[10] = "xxxxx";
 
-    ft_memmove(dest1, src, 5);
-    memmove(dest2, src, 5);
+//     ft_memmove(dest1, src, 5);
+//     memmove(dest2, src, 5);
 
-    printf("\nNormal copy (no overlap):\n");
-    printf("ft_memmove: %s\n", dest1);
-    printf("memmove:    %s\n", dest2);
+//     printf("\nNormal copy (no overlap):\n");
+//     printf("ft_memmove: %s\n", dest1);
+//     printf("memmove:    %s\n", dest2);
 
-    return 0;
-}
+//     return 0;
+// }

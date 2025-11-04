@@ -55,7 +55,12 @@ char	*ft_itoa(int n)
 		d[0] = '-';
 	return (d);
 }
-int main()
-{	
-		
-}
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include "libft.h"
+// int main()
+// {
+//     int big_pos = 51585;
+//     printf("ft_itoa positive: %s\n", ft_itoa(big_pos));
+//     return 0;
+// }	

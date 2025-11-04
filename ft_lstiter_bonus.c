@@ -22,19 +22,19 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-void up(void *cont)
-{
-	char **p = (char **)cont;
-	*p  = "1";
+// void up(void *cont)
+// {
+// 	char **p = (char **)cont;
+// 	*p  = "1";
 	
-}
+// }
 
-int main()
-{
-	char *str = "0";
-	t_list *node = ft_lstnew(&str);
-	printf("the content:%s\n",*(char **)node->content);
-	ft_lstiter(node,up);
-	printf("the content:%s\n",*(char **)node->content);
-}
+// int main()
+// {
+// 	char *str = "0";
+// 	t_list *node = ft_lstnew(&str);
+// 	printf("the content:%s\n",*(char **)node->content);
+// 	ft_lstiter(node,up);
+// 	printf("the content:%s\n",*(char **)node->content);
+// }
 

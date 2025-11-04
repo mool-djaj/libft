@@ -52,16 +52,16 @@ int	ft_atoi(const char *str)
 	return ((int)(nb * sign));
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "libft.h"
-int main(void)
-{
-    const char *big_pos = "66934689721357284725468254685";
-    const char *big_neg = "-922337203685477580880808080880";
-    printf("ft_atoi positive: %d\n", ft_atoi(big_pos));
-    printf("atoi    positive: %d\n", atoi(big_pos));
-    printf("ft_atoi negative: %d\n", ft_atoi(big_neg));
-    printf("atoi    negative: %d\n", atoi(big_neg));
-    return 0;
-}
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include "libft.h"
+// int main(void)
+// {
+//     const char *big_pos = "9223372036854775806";
+//     // const char *big_neg = "-922337203685477580880808080880";
+//     printf("ft_atoi positive: %d\n", ft_atoi(big_pos));
+//     printf("atoi    positive: %d\n", atoi(big_pos));
+//     // printf("ft_atoi negative: %d\n", ft_atoi(big_neg));
+//     // printf("atoi    negative: %d\n", atoi(big_neg));
+//     return 0;
+// }
