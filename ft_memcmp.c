@@ -29,18 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// #include "libft.h"
-// #include <stdio.h>
-// #include <string.h>
-
-// int main(void)
-// {
-//     char s1[] = "a";
-//     char s2[] = "e";
-
-//     printf("Test\n");
-//     printf("ft_memcmp: %d\n", ft_memcmp(s1, s2, 1));
-//     printf("memcmp:    %d\n", memcmp(s1, s2, 1));
-
-//     return 0;
-// }

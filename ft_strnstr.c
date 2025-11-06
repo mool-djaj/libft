@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	
+
 	if (*needle == '\0')
 		return ((char *) haystack);
 	i = 0;
@@ -33,11 +33,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-// 	printf("%s\n",ft_strnstr(NULL, "1",0));
-// 	printf("%s",strnstr(NULL, "1",0));
-// }

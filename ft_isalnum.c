@@ -20,12 +20,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-// int main(void)
-// {
-//     char test =  'a';
-// 	printf("%d\n",ft_isalnum(test));
-// 	test = '1';
-// 	printf("%d\n",ft_isalnum(test));
-// 	test = '/';
-// 	printf("%d\n",ft_isalnum(test));
-// }

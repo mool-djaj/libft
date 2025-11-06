@@ -22,9 +22,3 @@ t_list	*ft_lstnew(void *content)
 	*node = (t_list){content, NULL};
 	return (node);
 }
-// int main(void)
-// {
-// 	t_list *ay = ft_lstnew("000");
-// 	printf("%s",ay->content);
-	
-// }

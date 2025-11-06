@@ -14,11 +14,11 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
-		return;
 	size_t	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

@@ -36,28 +36,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-// void *up(void *cont)
-// {
-// 	char *s = (char *)cont;
-// 	char *res = strdup("1"); // create a new string
-// 	(void)s; // we don’t use the old one
-// 	return (res);
-// }
-// void del(void *cont)
-// {
-// 	free (cont);
-// }
-// int main()
-// {
-// 	t_list *node = ft_lstnew("");
-// 	t_list *lst = ft_lstmap(node,up,del);
-	
-// 	    while (lst)
-//     {
-//         printf("n: %s\n", (char *)lst->content);
-//         lst = lst->next;
-//     }
-	
-	
-// }
