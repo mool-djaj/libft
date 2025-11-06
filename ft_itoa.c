@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 12:52:43 by akaarich          #+#    #+#             */
-/*   Updated: 2025/11/03 21:42:19 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/05 22:24:39 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,12 +55,3 @@ char	*ft_itoa(int n)
 		d[0] = '-';
 	return (d);
 }
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include "libft.h"
-// int main()
-// {
-//     int big_pos = 51585;
-//     printf("ft_itoa positive: %s\n", ft_itoa(big_pos));
-//     return 0;
-// }	

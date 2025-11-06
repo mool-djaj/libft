@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:38:56 by akaarich          #+#    #+#             */
-/*   Updated: 2025/11/01 04:28:24 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/06 01:42:45 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,7 @@
 
 void	ft_bzero(void	*ptr,	size_t	n)
 {
-	size_t				i;
-	unsigned char		*p;
-
-	i = 0;
-	p = (unsigned char *)ptr;
-	while (i < n)
-	{
-		p[i] = '\0';
-		i++;
-	}
+	ft_memset(ptr ,0 ,n);
 }
 
 // #include <stdio.h>
@@ -63,7 +54,7 @@ void	ft_bzero(void	*ptr,	size_t	n)
 // 	int len = sizeof(ptr);
 
 // 	printf("%s,",ptr);
-// 	ft_bzero(ptr,10);
+// 	ft_bzero(ptr,len);
 // 	while (i < len)
 // 	{
 // 		printf("\n%d",ptr[i]);

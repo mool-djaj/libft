@@ -26,19 +26,3 @@ void	*ft_calloc(size_t	count,	size_t	size)
 	ft_bzero(d, total);
 	return (d);
 }
-// #include <stdlib.h>
-// #include "libft.h"
-// #include <stdio.h>
-
-// int main(void)
-// {
-//     int n = -1;
-//     // char *real = calloc(n, -1);
-//     char *mine = calloc(n, -1);
-
-//     for (int i = 0; i < n; i++)
-//         printf(" mine[%d]=%d\n", i, mine[i]);
-
-//     // free(real);
-//     free(mine);
-// }

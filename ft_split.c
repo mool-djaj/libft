@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:43:55 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/28 20:35:07 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/05 20:10:39 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,10 @@ static char	*word_fill(const char *s, char c)
 static char	**ft_s_mall(const char *s, char c)
 {
 	char	**d;
+	size_t	i;
 	size_t	words;
 
+	i = 0;
 	if (!s)
 		return (NULL);
 	words = ft_count_words(s, c);

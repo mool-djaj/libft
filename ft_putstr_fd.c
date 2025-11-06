@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:22:24 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 15:22:25 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/06 01:23:46 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return;
 	size_t	i;
 
 	i = 0;

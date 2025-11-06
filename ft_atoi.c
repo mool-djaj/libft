@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:38:48 by akaarich          #+#    #+#             */
-/*   Updated: 2025/11/04 01:33:04 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/06 01:35:31 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,11 +57,11 @@ int	ft_atoi(const char *str)
 // #include "libft.h"
 // int main(void)
 // {
-//     const char *big_pos = "9223372036854775806";
-//     // const char *big_neg = "-922337203685477580880808080880";
+//     const char *big_pos = "66934689721357284725468254685";
+//     const char *big_neg = "-922337203685477580880808080880";
 //     printf("ft_atoi positive: %d\n", ft_atoi(big_pos));
 //     printf("atoi    positive: %d\n", atoi(big_pos));
-//     // printf("ft_atoi negative: %d\n", ft_atoi(big_neg));
-//     // printf("atoi    negative: %d\n", atoi(big_neg));
+//     printf("ft_atoi negative: %d\n", ft_atoi(big_neg));
+//     printf("atoi    negative: %d\n", atoi(big_neg));
 //     return 0;
 // }

@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 00:49:40 by akaarich          #+#    #+#             */
-/*   Updated: 2025/11/03 20:01:03 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/06 01:13:11 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-
 
 
 // typedef	struct{
